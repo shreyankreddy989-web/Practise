@@ -1,0 +1,456 @@
+LINUX COMMANDS
+
+
+BASIC NAVIGATION COMMANDS
+
+pwd	Show current directory
+ls	List files
+ls -l	Long list view
+ls -a	Show hidden files
+cd dir	Change directory
+cd ..	Move one folder back
+cd ~	Go home directory
+clear	Clear terminal
+tree	Show directory tree
+history	Show command history
+whoami	Show current username
+uname	System info
+uname -a	Full system info
+hostname	Show system hostname
+date	Show current date
+cal	Show calendar
+uptime	System uptime
+
+
+FILE AND DIRECTORY COMMANDS
+
+
+touch file	Create file
+mkdir dir	Create directory
+mkdir -p	Create nested folders
+rmdir dir	Remove empty directory
+rm file	Remove file
+rm -r dir	Remove directory
+rm -rf dir	Force remove
+cp a b	Copy file
+cp -r	Copy directories
+mv a b	Move/rename
+rename	Rename files
+ln -s	Create symbolic link
+stat file	File information
+file name	File type
+basename	Extract filename
+dirname	Extract directory
+find	Search files
+locate	Fast file search
+updatedb	Update locate database
+which cmd	Locate command
+whereis cmd	Find command files
+
+FILE VIEWING COMMANDS
+
+cat file	Display file
+tac file	Reverse display
+less file	Scroll viewer
+more file	Paginated viewer
+head file	First lines
+tail file	Last lines
+tail -f log	Live log monitoring
+nl file	Number lines
+wc file	Count lines/words
+sort file	Sort lines
+uniq	Remove duplicates
+cut	Cut columns
+paste	Merge lines
+tr	Translate characters
+split	Split files
+strings	Extract text
+
+
+TEXT EDITORS
+
+nano	Simple editor
+vim	Advanced editor
+vi using	Classic editor
+emacs	Powerful editor
+code	VS Code
+
+USER MANAGEMENT
+
+useradd	Add user
+adduser	Interactive user add
+passwd	Change password
+userdel	Delete user
+groupadd	Add group
+groups	Show groups
+id	User info
+su	Switch user
+sudo	Run as admin
+visudo	Edit sudoers
+who	Logged users
+w	User activity
+last	Login history
+
+PERMISSIONS COMMANDS
+
+
+chmod	Change permissions
+chmod 777	Full permissions
+chmod 755	Common executable
+chown	Change owner
+chgrp	Change group
+umask	Default permissions
+Permission values:
+* 4 = read
+* 2 = write
+* 1 = execute
+*
+Example:
+* 755 = rwx r-x r-x
+
+PROCESS MANAGEMENT
+Command	Purpose
+ps	Show processes
+ps aux	Detailed process list
+top	Live process monitor
+htop	Interactive monitor
+kill PID	Kill process
+killall name	Kill by name
+pkill	Kill matching process
+jobs	Background jobs
+bg	Resume background
+fg	Bring foreground
+nohup	Run after logout
+nice	Priority control
+renice	Change priority
+
+PACKAGE MANAGEMENT
+Debian/Ubuntu
+
+
+Command	Purpose
+apt update	Update package list
+apt upgrade	Upgrade packages
+apt install pkg	Install package
+apt remove pkg	Remove package
+apt purge pkg	Remove fully
+apt search pkg	Search package
+dpkg -i file.deb	Install deb file
+Fedora/RHEL
+Command	Purpose
+dnf install	Install package
+yum install	Older systems
+rpm -ivh	Install rpm
+Arch Linux
+Command	Purpose
+pacman -S	Install package
+pacman -R	Remove package
+pacman -Ss	Search package
+
+NETWORK COMMANDS
+
+Command	Purpose
+ping	Test connectivity
+ifconfig	Network config
+ip addr	IP details
+ip route	Routing
+netstat	Network stats
+ss	Socket stats
+traceroute	Path tracking
+dig	DNS lookup
+nslookup	DNS query
+curl	Transfer data
+wget	Download files
+ssh	Remote login
+scp	Secure copy
+rsync	Fast sync
+ftp	FTP client
+sftp	Secure FTP
+arp	ARP table
+hostname -I	Show IP
+
+DISK MANAGEMENT
+
+Command	Purpose
+df -h	Disk usage
+du -sh	Folder size
+fdisk	Partition tool
+lsblk	Block devices
+mount	Mount disk
+umount	Unmount disk
+mkfs	Format filesystem
+fsck	Check filesystem
+blkid	Disk UUID
+parted	Partition editor
+dd	Disk cloning
+
+ SYSTEM MONITORING
+
+Command	Purpose
+free -h	RAM usage
+vmstat	Virtual memory
+iostat	Disk IO
+sar	System activity
+dmesg	Kernel logs
+journalctl	Systemd logs
+sensors	Temperature
+lscpu	CPU info
+lsusb	USB devices
+lspci	PCI devices
+neofetch	System summary
+
+ARCHIVE & COMPRESSION
+
+Command	Purpose
+tar -cvf	Create tar
+tar -xvf	Extract tar
+gzip	Compress
+gunzip	Decompress
+zip	Create zip
+unzip	Extract zip
+bzip2	Compress
+xz	High compression
+7z	7zip utility
+
+
+SEARCHING & FILTERING
+
+
+Command	Purpose
+grep	Search text
+grep -r	Recursive search
+awk	Pattern processing
+sed	Stream editor
+xargs	Build commands
+expr	Evaluate expressions
+seq	Generate numbers
+Example:
+
+grep "hello" file.txt
+
+
+SHELL COMMANDS
+
+Command	Purpose
+echo	Print text
+alias	Create shortcut
+unalias	Remove alias
+export	Environment variable
+env	Show variables
+source	Reload file
+bash	Bash shell
+zsh	Z shell
+sh	Bourne shell
+
+REDIRECTION & PIPES
+
+
+Symbol	Purpose
+>	Redirect output
+>>	Append output
+<	Input redirect
+|	Pipe output
+2>	Redirect errors
+&>	Redirect all
+Example:
+
+ls -l > files.txt
+
+
+
+CRON & AUTOMATION
+
+
+Command	Purpose
+crontab -e	Edit cron jobs
+crontab -l	List jobs
+at	Schedule one-time task
+systemctl	Manage services
+service	Service control
+
+
+SYSTEMCTL COMMANDS
+
+
+Command	Purpose
+systemctl start	Start service
+systemctl stop	Stop service
+systemctl restart	Restart service
+systemctl status	Service status
+systemctl enable	Auto-start
+systemctl disable	Disable startup
+
+
+PROGRAMMING COMMANDS
+C/C++
+
+
+Command	Purpose
+gcc	C compiler
+g++	C++ compiler
+make	Build tool
+cmake	Build system
+gdb	Debugger
+Java
+Command	Purpose
+java	Run Java
+javac	Compile Java
+jar	Java archive
+Python
+Command	Purpose
+python	Python interpreter
+pip	Package installer
+venv	Virtual environment
+Node.js
+Command	Purpose
+node	Run JavaScript
+npm	Package manager
+npx	Execute packages
+
+
+GIT COMMANDS
+
+
+Command	Purpose
+git init	Initialize repo
+git clone	Clone repo
+git status	Repo status
+git add	Stage files
+git commit	Commit changes
+git push	Upload changes
+git pull	Download changes
+git branch	Branch list
+git checkout	Switch branch
+git merge	Merge branch
+git log	Commit history
+
+
+SECURITY COMMANDS
+
+
+Command	Purpose
+chmod	Permissions
+chown	Ownership
+ufw	Firewall
+iptables	Firewall rules
+ssh-keygen	SSH keys
+fail2ban	Block attacks
+openssl	Encryption tools
+
+
+ADVANCED COMMANDS
+
+Command	Purpose
+strace	Trace syscalls
+ltrace	Trace libraries
+tcpdump	Packet capture
+wireshark	GUI packet analyzer
+docker	Containers
+kubectl	Kubernetes
+podman	Container runtime
+chroot	Change root
+screen	Terminal multiplexer
+tmux	Session manager
+
+
+ IMPORTANT SHORTCUTS
+
+
+
+Shortcut	Purpose
+Ctrl + C	Stop process
+Ctrl + Z	Suspend process
+Ctrl + D	Logout
+Ctrl + L	Clear screen
+Ctrl + A	Start of line
+Ctrl + E	End of line
+Tab	Auto-complete
+Up Arrow	Previous command
+
+
+HELP COMMANDS
+
+
+Command	Purpose
+man command	Manual page
+info command	Detailed info
+help	Shell help
+command --help	Quick help
+apropos keyword	Search manuals
+
+
+
+
+MOST IMPORTANT COMMANDS ARE
+
+1. pwd
+2. ls
+3. cd
+4. mkdir
+5. touch
+6. cp
+7. mv
+8. rm
+9. cat
+10. nano
+11. grep
+12. find
+13. chmod
+14. sudo
+15. apt install
+16. ping
+17. ssh
+18. ps
+19. kill
+20. systemctl
+
+
+
+25. HOW TO SEE ALL COMMANDS INSTALLED
+
+compgen -c
+
+
+OR
+
+ls /bin
+ls /usr/bin
+
+
+
+
+
+MPORTANT WARNING
+Be careful with these commands:
+
+rm -rf /
+chmod -R 777 /
+mkfs
+dd
+
+
+These can damage your system if used incorrectly.
+
+
+The best resources
+
+
+* Linux man pages
+* TLDR pages
+* Linux Journey
+* OverTheWire Bandit
+* Arch Wiki
+* Ubuntu Documentation
+
+ FINAL NOTE
+
+
+Linux has thousands of commands because:
+* Different distributions include different tools
+* Developers create custom commands
+* Packages install new utilities
+* Shells add built-in commands
+The best approach is:
+1. Learn basi
+
+
