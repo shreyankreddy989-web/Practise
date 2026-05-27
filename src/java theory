@@ -1,0 +1,69 @@
+
+Java- java is a class basec high level object oriented projamming
+
+object oriented---OOP in Java is a programming style that uses classes and objects to organize code and data together.
+
+
+class- A class in Java is a blueprint used to create objects.
+       a class is like a temple or design
+
+       It contains:
+       variables (data)
+       methods (actions)
+
+ variable- A variable in java is used to store data or values.
+           A variable is like a box that stores information.
+
+ ex: age name langaunge country etc.
+
+ Data Type- it tells
+ what kind of value a variable stores.
+
+ ex: string int double boolean
+
+ int--whole numbers	--17
+
+ double	--decimal numbers--89.98
+
+ char---	single character---	'S'
+
+ boolean--	true/false--	true
+
+ String	text--	"shreyank"
+
+
+ One-Line Definitions
+ Class
+
+ A blueprint used to create objects.
+
+ Variable
+
+ A name used to store data.
+
+ Data Type
+
+ Defines the type of data stored in a variable.
+
+
+
+
+
+
+
+
+
+ constructor :
+
+
+ 3 main conditions :
+ 1. constructor name should be always class name
+ 2. constructor doesnt have return type
+ 3.Automatic Execution: It is automatically invoked at the time of object creation to initialize the object's state.
+
+ string name ;
+
+ public returntype  bike( string name){
+ this.name = name;
+
+ }
